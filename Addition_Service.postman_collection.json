@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "addition-service-collection",
+		"name": "Addition Service",
+		"description": "Postman collection for the Addition Service API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Two Numbers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"number1\": 5.0,\n  \"number2\": 3.0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"add"
+					]
+				},
+				"description": "Adds two numbers together and returns the result"
+			},
+			"response": [
+				{
+					"name": "Successful Addition",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"number1\": 5.0,\n  \"number2\": 3.0\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"result\": 8.0\n}"
+				}
+			]
+		}
+	]
+}
